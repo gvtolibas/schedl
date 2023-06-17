@@ -65,12 +65,15 @@ $stmt->close();
 
 // Check if any profiles are found
 if ($result->num_rows > 0) {
+    echo "<br><br>";
+    echo "<h1> List of Registered Users </h1>";
     // Output data of each profile
     while ($row = $result->fetch_assoc()) {
-        echo "Name: " . $row["name"] . "<br>";
-        echo "Email: " . $row["email"] . "<br>";
-        echo "<a href=\"book_meeting.php?profile_id=" . $row["id"] . "&participant2_email=" . $row["email"] . "\">Book Meeting</a><br>";
-        echo "<br><br>";
+        echo "<br><br><center>";
+        echo "<text>" . $row["name"] . "<br>";
+        echo "<text>" . $row["email"] . "<br>";
+        echo "<a href=\"book_meeting.php?profile_id=" . $row["id"] . "&participant2_email=" . $row["email"] . "\">
+        <mark> &nbsp Book Meeting &nbsp</mark></a>";
     }
 } else {
     echo "No profiles found.";
@@ -84,15 +87,6 @@ $connection->close();
 <html>
 <head>
     <title>Search | Schedl</title>
-    
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-</style>
-
 </head>
 
 <body>
