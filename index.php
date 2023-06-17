@@ -6,7 +6,6 @@
    
    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-</head>
 <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
     * {
@@ -76,6 +75,43 @@
         background-color: #fb6f92;
     }
 
+    hr {
+        border-top: 2px solid lightgray;
+        opacity: .3;
+    }
+
+    mark {
+        background-color: #fff;
+        border-radius: 50px;
+        font-weight: 700;
+        /* margin-left: 48rem; */
+        padding: 3px 10px;
+
+        color: #4d0085;
+        font-size: 15px;
+        transition: .5s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    }
+
+    mark:hover {
+        background-color: #fec8d8;
+    }
+
+    text {
+        /* margin-left: 45rem; */
+        font-weight: 600;
+        line-height: 40px;
+
+        color: #fff;
+        font-size: 17px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+    }
+    
 	button{
 		color: #fff;
         font-weight: bold;
@@ -93,7 +129,10 @@
         background-color: #fb6f92;
     }
 
-</style>
+</style>   
+
+</head>
+
 <body>
     <nav class="navbar">
         <div class="navdiv">
@@ -107,7 +146,7 @@
             </ul>
         </div>
     </nav>
-
+    
     <script>
         function logout() {
             // Perform the logout process here
